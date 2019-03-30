@@ -6,10 +6,58 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600);
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+.reveal .slides section .fragment {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .8s ease; }
+  .reveal .slides section .fragment.visible {
+    opacity: 1;
+    visibility: inherit; }
+
 .reveal .align-left {
   text-align: left !important; }
+.reveal .align-center {
+  text-align: center !important; }
+.reveal .valign {
+  vertical-align: middle; }
 .reveal .mt2 {
   margin-top: 2rem; }
+.reveal .ul-left {
+  display: block;
+  list-style-type: none; }
+  .reveal .ul-left.inline-30 li {
+    display: inline-block;
+    width: 29%; }
+.reveal .huge {
+  color: #d1548e;
+  font-family: Oswald, sans-serif;
+  font-size: 16rem;
+  line-height: 1.1; }
+.reveal .pink {
+  color: #d1548e; }
+.reveal .purple {
+  color: #505160; }
+.reveal .blue {
+  color: #68829e; }
+.reveal .yellow {
+  color: #aebd38; }
+.reveal .green {
+  color: #598234; }
+.reveal .max-500h {
+  max-height: 500px;
+  width: auto; }
+.reveal .max-400h {
+  max-height: 400px;
+  width: auto; }
+.reveal .max-300h {
+  max-height: 300px;
+  width: auto; }
+.reveal .max-200h {
+  max-height: 200px;
+  width: auto; }
+.reveal .max-100h {
+  max-height: 100px;
+  width: auto; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -282,14 +330,17 @@ body {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
 .reveal blockquote {
   width: 80%; }
-.reveal .huge {
-  color: #d1548e;
-  font-family: Oswald, sans-serif;
-  font-size: 16rem;
-  line-height: 1.1; }
 .reveal .tall-content {
   max-height: 600px;
   overflow: hidden;
   overflow-y: scroll; }
+.reveal .pie img {
+  max-height: 500px;
+  width: auto; }
+.reveal .subjects li {
+  display: inline-block;
+  width: 49%; }
+  .reveal .subjects li img {
+    margin-right: 1rem; }
 
 /*# sourceMappingURL=lezwatch.css.map */

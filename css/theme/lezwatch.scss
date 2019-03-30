@@ -20,6 +20,10 @@
 // Override theme settings (see template/settings.scss)
 $backgroundColor: #111;
 $lwtvPink: #d1548e;
+$purple: #505160;
+$blue: #68829e;
+$yellow: #aebd38;
+$green: #598234;
 
 $mainFont: 'Open Sans', sans-serif;
 $linkColor: #e7ad52;
@@ -35,6 +39,21 @@ $heading3Size: 3rem;
 $heading4Size: 2rem;
 $selectionBackgroundColor: #e7ad52;
 
+// Change the speed of fragments
+
+.reveal .slides section {
+	.fragment {
+		opacity: 0;
+		visibility: hidden;
+		transition: all .8s ease;
+
+		&.visible {
+			opacity: 1;
+			visibility: inherit;
+		}
+	}
+}
+
 // Helpers
 
 .reveal {
@@ -42,8 +61,80 @@ $selectionBackgroundColor: #e7ad52;
 		text-align: left !important;
 	}
 
+	.align-center {
+		text-align: center !important;
+	}
+
+	.valign {
+		vertical-align: middle;
+	}
+
 	.mt2 {
 		margin-top: 2rem;
+	}
+
+	.ul-left {
+		display: block;
+		list-style-type: none;
+
+		&.inline-30 {
+			li {
+				display: inline-block;
+				width: 29%;
+			}
+		}
+	}
+
+	.huge {
+		color: $lwtvPink;
+		font-family: $headingFontBig;
+		font-size: 16rem;
+		line-height: 1.1;
+	}
+
+	.pink {
+		color: $lwtvPink;
+	}
+
+	.purple {
+		color: $purple;
+	}
+
+	.blue {
+		color: $blue;
+	}
+
+	.yellow {
+		color: $yellow;
+	}
+
+	.green {
+		color: $green;
+	}
+
+	.max-500h {
+		max-height: 500px;
+		width: auto;
+	}
+
+	.max-400h {
+		max-height: 400px;
+		width: auto;
+	}
+
+	.max-300h {
+		max-height: 300px;
+		width: auto;
+	}
+
+	.max-200h {
+		max-height: 200px;
+		width: auto;
+	}
+
+	.max-100h {
+		max-height: 100px;
+		width: auto;
 	}
 }
 
@@ -51,6 +142,8 @@ $selectionBackgroundColor: #e7ad52;
 // Theme template ------------------------------
 @import "template/theme";
 // ---------------------------------------------
+
+// Specific to our slide deck
 
 .reveal {
 	h1 {
@@ -63,16 +156,27 @@ $selectionBackgroundColor: #e7ad52;
 		width: 80%;
 	}
 
-	.huge {
-		color: $lwtvPink;
-		font-family: $headingFontBig;
-		font-size: 16rem;
-		line-height: 1.1;
-	}
-
 	.tall-content {
 		max-height: 600px;
 		overflow: hidden;
 		overflow-y: scroll;
+	}
+
+	.pie {
+		img {
+			max-height: 500px;
+			width: auto;
+		}
+	}
+
+	.subjects {
+		li {
+			display: inline-block;
+			width: 49%;
+
+			img {
+				margin-right: 1rem;
+			}
+		}
 	}
 }
