@@ -20,6 +20,8 @@
   text-align: center !important; }
 .reveal .valign {
   vertical-align: middle; }
+.reveal .bold {
+  font-weight: 600; }
 .reveal .mt2 {
   margin-top: 2rem; }
 .reveal .pt2 {
