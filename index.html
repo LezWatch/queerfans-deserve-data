@@ -739,7 +739,7 @@
 				</section>
 
 				<section>
-					<h2>Gold <i class="fas fa-star" style="color: #ffd700;"></i></h2>
+					<h2>Gold <i class="fas fa-star gold"></i></h2>
 
 					<p>
 						Openly queer creators, majority queer characters, out queer actors and stories made for a queer female audience.
@@ -755,7 +755,7 @@
 				</section>
 
 				<section>
-					<h2>Silver <i class="fas fa-star" style="color: silver;"></i></h2>
+					<h2>Silver <i class="fas fa-star silver"></i></h2>
 
 					<p>
 						Openly queer creators, queer characters and stories made for a queer female audience, but may have no out queer actors or also has a significant number of stories geared towards a non-queer female audience.
@@ -771,7 +771,7 @@
 
 
 				<section>
-					<h2>Bronze <i class="fas fa-star" style="color: #cd7f32;"></i></h2>
+					<h2>Bronze <i class="fas fa-star bronze"></i></h2>
 
 					<p>
 						Openly queer creators, some queer characters and stories, made for a general audience. Also used for shows focused on a queer main character and their stories, but has no out queers involved with production or acting.
@@ -1015,7 +1015,7 @@
 					<div class="huge purple"><i class="fas fa-smile"></i></div>
 
 					<aside class="notes">
-						We're going to take a look at the complicated math that goes into calculating the ratings score.
+						I'm going to explain all the elements and math that goes into calculating the ratings score.
 					</aside>
 				</section>
 
@@ -1043,7 +1043,187 @@
 					</ul>
 
 					<aside class="notes">
-						These are all of the sections of a show page that falls under the "Ratings" category.
+						These are all of the sections of a show page that falls under the "Ratings" category. This is the 100% subjective part of show ratings.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Heart Ratings</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Heart Ratings<br>
+							<img src="img/ratings-block.png" alt="Heart ratings" class="plain max-300h">
+						</li>
+						<li class="width64 pt2">
+							<p class="pl3">
+								<i class="fas fa-heart red"></i> = 1 point
+							</p>
+
+							<ul class="ulstacked mt2">
+								<li>Realness 0 - 5 Points</li>
+								<li>Quality 0 - 5 Points</li>
+								<li>Screentime 0 - 5 Points</li>
+							</ul>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						Each heart under Realness, Quality and Screentime earns a point. 
+					</aside>
+				</section>
+
+				<section data-transition="none">
+					<h2>Heart Ratings</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Heart Ratings<br>
+							<img src="img/ratings-block.png" alt="Heart ratings" class="plain max-300h">
+						</li>
+						<li class="width64 pt2">
+							<p class="pl3">
+								<i class="fas fa-heart red"></i> = 1 point
+							</p>
+
+							<ul class="ulstacked mt2">
+								<li>Realness 4 Points</li>
+								<li>Quality 4 Points</li>
+								<li>Screentime 5 Points</li>
+							</ul>
+							<p class="pl3">
+								= 13 Points
+							</p>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						The points are added together to get a total. In this example it is 13.
+					</aside>
+				</section>
+
+				<section data-transition="none">
+					<h2>Heart Ratings</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Heart Ratings<br>
+							<img src="img/ratings-block.png" alt="Heart ratings" class="plain max-300h">
+						</li>
+						<li class="width64 pt2 align-center">
+							<p>
+								The sum of <i class="fas fa-heart red"></i> points are<br>
+								multiplied by 3.
+							</p>
+							<p class="fragment mt2">
+								13 x 3 = 39
+							</p>
+							<h3 class="pink fragment">39 Total Points</h3>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						That total is multiplied by 3 to get the final point count. In this example that's 13 times 3 which equals 39. Making the total points for heart ratings is 39.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Is it Worth Watching?</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Worth Watching<br>
+							<img src="img/worthit-block.png" alt="Worth Watching" class="plain">
+						</li>
+						<li class="width64 pt2 align-center">
+							<ul class="ulstacked mt2">
+								<li class="fragment">
+									<img src="img/yes.png" alt="Yes" class="plain valign"> = 10 Points
+								</li>
+								<li class="fragment">
+									<img src="img/meh.png" alt="Meh" class="plain valign"> = 5 Points
+								</li>
+								<li class="fragment">
+									<img src="img/no.png" alt="No" class="plain valign"> = -10 Points									
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						This is where we give a show of thumbs up, thumbs down or "meh" in regards to it being worth watching or not. The points are straight forward.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Stars</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Stars<br>
+							<img src="img/star-block.png" alt="Stars" class="plain">
+						</li>
+						<li class="width64 pt2 align-center">
+							<ul class="ulstacked mt2">
+								<li class="fragment gold">
+									Gold <i class="fas fa-star gold"></i> = 20 Points
+								</li>
+								<li class="fragment pt2 silver">
+									Silver <i class="fas fa-star silver"></i> = 10 Points
+								</li>
+								<li class="fragment pt2 bronze">
+									Bronze <i class="fas fa-star bronze"></i> = 5 Points									
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						The star ratings are simple as well. (Read outloud) 
+					</aside>
+				</section>
+
+				<section>
+					<h2>Trigger Warnings</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Trigger Warnings<br>
+							<img src="img/trigger-block.png" alt="Trigger Warnings" class="plain">
+						</li>
+						<li class="width64 pt2 align-center">
+							<ul class="ulstacked mt2">
+								<li class="fragment pt2 yellow2">
+									<i class="fas fa-hand-paper yellow2"></i> Low -5 Points
+								</li>
+								<li class="fragment pt2 orange">
+									<i class="fas fa-hand-paper orange"></i> Medium -10 Points
+								</li>
+								<li class="fragment pt2 red">
+									<i class="fas fa-hand-paper red"></i> High -15 Points
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						Trigger warning lose points.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Show We Love</h2>
+
+					<ul class="ul-left inline-30">
+						<li class="align-center">Show we Love<br>
+							<img src="img/love-block.png" alt="Show we Love" class="plain">
+						</li>
+						<li class="width64 pt2 align-center fragment grow">
+							<h1>
+								<i class="fas fa-heart pink"></i>
+							</h1>
+							<h3>
+								+40 Points!
+							</h3>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						If we love a show it gets 40 points!
 					</aside>
 				</section>
 
@@ -1115,7 +1295,7 @@
 					</ul>
 
 					<aside class="notes">
-						We put the tropes into six categories, some good and some bad. If a show has no tropes, it gets the most points, followed by all good, and so on and so forth. But then we play math games with a forumla.
+						We put the tropes into six categories, some good and some bad. If a show has no tropes, it gets the most points, followed by all good, and so on and so forth. But then we play math games with a formula.
 					</aside>
 				</section>
 
