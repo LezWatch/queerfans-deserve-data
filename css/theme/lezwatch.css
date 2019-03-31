@@ -49,6 +49,8 @@
   font-family: Oswald, sans-serif;
   font-size: 16rem;
   line-height: 1.1; }
+.reveal .smaller {
+  font-size: 30px; }
 .reveal .pink {
   color: #d1548e; }
 .reveal .purple {
