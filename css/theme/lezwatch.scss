@@ -72,7 +72,11 @@ $selectionBackgroundColor: #e7ad52;
 	}
 
 	.valign {
-		vertical-align: middle;
+		vertical-align: middle !important;
+	}
+
+	.valignt {
+		vertical-align: top !important;
 	}
 
 	.bold {

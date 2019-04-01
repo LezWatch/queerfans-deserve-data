@@ -19,7 +19,9 @@
 .reveal .align-center {
   text-align: center !important; }
 .reveal .valign {
-  vertical-align: middle; }
+  vertical-align: middle !important; }
+.reveal .valignt {
+  vertical-align: top !important; }
 .reveal .bold {
   font-weight: 600; }
 .reveal .mt2 {
